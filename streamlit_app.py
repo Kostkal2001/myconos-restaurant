@@ -127,11 +127,7 @@ div[data-testid="stTabs"] div[role="tablist"] > button[aria-selected="true"] {
 
 @st.cache_data
 def load_data():
-    file_id = "1KV_-EAGsoKQM8gOTBcP0X-KlvFo_nSn7"
-    url = f"https://drive.google.com/uc?export=download&id={file_id}"
-    return pd.read_csv(url)
-
-
+    return pd.read_csv("SalesMBA_cleaned2.csv")
 
 def split_by_time(df):
     return {
