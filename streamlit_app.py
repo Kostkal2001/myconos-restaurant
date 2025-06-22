@@ -127,7 +127,7 @@ div[data-testid="stTabs"] div[role="tablist"] > button[aria-selected="true"] {
 
 @st.cache_data
 def load_data():
-    return pd.read_csv("SalesMBA_cleaned2.csv")
+    return pd.read_csv("salesMBA_cleaned2.csv")
 
 def split_by_time(df):
     return {
